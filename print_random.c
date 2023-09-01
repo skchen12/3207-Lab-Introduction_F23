@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "random.h"
 
 
-
-int main()
+int printRand()
 {
 	int a;
 
@@ -13,7 +13,7 @@ int main()
 
 	printf("Today's random word: ");
 	for(a=0;a<7;a++)
-		putchar( randchar() );
+		putchar( randChar() );
 	putchar('\n');
 
 	return(0);
